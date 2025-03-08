@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F6F0EB;
+    color: #492118;
+    font-family:"Poppins", sans-serif;
+}
+header{
+    background-color: #Ffff;
+    padding: 24px 32px;
+    position: sticky;
+    top: 0;
+    /* display: flex;
+    justify-content: center; */
+}
+.header{
+    max-width:1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+nav a{
+    color:inherit;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration-line: none;
+}
+nav a+a{
+    margin-left: 24px;
+}
+.logo {
+    max-width:50px;  
+}
+
+main{
+    padding: 0 24px;
+}
+
+/* Hero */
+.hero{
+    margin-top:100px;
+}
+.hero-img{
+    max-width:1200px;
+    margin: 0 auto;
+}
+.hero-img img{
+    width:100%;
+    height:auto;
+    display: block;
+}
+.hero p{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/* section 1st */
+.section{
+    margin-top: 100px;
+}
+.section-img{
+    max-width:900px;
+    margin: 0 auto;
+}
+.section-img img{
+    width:100%;
+}
+.section-img h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom:10px;
+}
+
+/* footer */
+footer p{
+    text-align: center;
+    margin: 100px 0;
+    font-size: 20px;
+}
+
+footer div{
+    color: #492118;
+    font-weight: 700;
+    text-align: end;
+    margin-right:50px;
+}
+
+/* Hembergur menu */
+.close{
+    position: absolute;
+    right:20px;
+    top:12px;
+    font-size:40px;
+    cursor: pointer;
+    display: none;
+}
+.open{
+    font-size:30px;
+    cursor: pointer;
+    display: none;
+}
+/* media queries */
+
+@media(max-width:1000px){
+    header{
+        padding: 20px 25px;
+    }
+    nav a+a{
+        margin-left: 18px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+}
+@media(max-width:767px){
+    header{
+        padding:10px 20px;
+        /* background-color:transparent; */
+        border-bottom:2px solid hsl(11, 51%, 19%);
+        position: sticky;
+        top: 0;
+    }
+    nav a+a{
+        margin-top:15px;
+        margin-left: 0;
+    }
+   nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 29px 25px;
+    margin-top:20px;
+    margin-right: 20px;
+    background-color: hsla(15, 9%, 91%, 0.92);
+    border-radius: 1rem;
+    transition:right 1s ease-in-out;
+    display: none;
+   
+   }
+   .hero{
+        margin-top: 50px;
+   }
+   .hero p{
+    margin-top: 15px;
+    font-size: 15px;
+   }
+   .section{
+         margin-top: 50px;
+   }
+   .section h2{
+       font-size:24px;
+   }
+   .open,.close{
+    display: block;
+   }
+
+   /* Java Script */
+
+   /* open */
+   .open-click .open{
+    display:none;
+   }
+   .open-click nav{
+    display: flex;
+   }
+   /* close */
+   .close-click .open{
+    display:block;
+   }
+   .close-click nav{
+    display: none;
+   }
+}
